@@ -1,0 +1,10 @@
+admin_user:
+  email: "tap@gmail.com"
+  password: "123"
+
+student_user:
+  email: "kid4@gmail.com"
+  password: "123"
+
+browser: "chrome"
+base_url: "https://e-school.ge/"
