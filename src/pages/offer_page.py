@@ -35,7 +35,8 @@ class OfferPage(BasePage):
         submit = self.driver.find_element(By.CLASS_NAME, 'form-submit-btn')
         text = self.driver.find_element(By.CLASS_NAME, 'ql-editor')
         text.send_keys(offer_text)
-
+        img_button = self.driver.find_element(By.ID, 'image')
+        img_button.send_keys(offer_image)
         self.driver.execute_script("arguments[0].scrollIntoView();", submit)
         submit.click()
         time.sleep(1)
